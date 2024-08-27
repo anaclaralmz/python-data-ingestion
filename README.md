@@ -1,6 +1,9 @@
 # Pacote de ingestão de dados com python
-- Criação de pacote de ingestão de dados de uma API da Pokedéx.
-- Armazenamento de dados em um bucket da MinIO, que estará em docker.
+- Criação de pacote de ingestão de dados de uma API da Pokedéx;
+- Armazenamento de dados em um bucket da MinIO, em formato parquet;
+- Criação de tabela e view no ClickHouse;
+- Sistema todo dockerizado.
+
 ## Tecnologias utilizadas
 - python
 - docker

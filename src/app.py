@@ -15,7 +15,7 @@ create_bucket_if_not_exists("raw-data")
 execute_sql_script('sql/create_table.sql')
 execute_sql_script('sql/create_view.sql')
 
-@app.route('/data/<name>', methods=['POST'])
+@app.route('/data/<name>', methods=['GET'])
 def receive_data(name):
     data = get_pokemon(name)
     

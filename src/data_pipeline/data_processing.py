@@ -14,7 +14,7 @@ def process_data(data):
             'name': data['name']
         }])
 
-        filename = f"raw_data_{data.name}_{datetime.now().strftime('%Y%m%d%H%M%S')}.parquet"
+        filename = f"raw_data_{datetime.now().strftime('%Y%m%d%H%M%S')}.parquet"
         
         table = pa.Table.from_pandas(df)
         pq.write_table(table, filename)

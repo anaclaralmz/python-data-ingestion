@@ -32,7 +32,7 @@ def receive_data(name):
     client = get_client()  # Obter o cliente ClickHouse
     insert_dataframe(client, 'working_data', df_prepared)
 
-    return jsonify({"message": "Pokemon: {name} recebido, armazenado e processado com sucesso."}), 200
+    return jsonify({"message": "Pokemon recebido, armazenado e processado com sucesso."}), 200
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
